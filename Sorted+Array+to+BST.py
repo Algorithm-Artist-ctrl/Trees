@@ -5,14 +5,9 @@ class BSTNode:
         self.data = data
         self.left = None
         self.right = None
-
-
-
 def print_binary_tree(node):
     if node is None:
         return
-    
-    # Format: Node: L->LeftChild, R->RightChild
     print(f"{node.data}:", end=" ")
     
     if node.left:
@@ -24,17 +19,13 @@ def print_binary_tree(node):
         print(f"R->{node.right.data}")
     else:
         print("R->None")
-    
-    # Recur for the left and right children
     print_binary_tree(node.left)
     print_binary_tree(node.right)
 
 def sortedListToBST(l1):
     if(len(l1)==0):
         return None
-    
-    mid = len(l1)//2 #finding the middle index
-
+    mid = len(l1)//2 
     rootData = l1[mid]
     root = BSTNode(rootData)
 
