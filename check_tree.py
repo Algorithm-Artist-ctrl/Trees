@@ -9,5 +9,4 @@ def isSymmetric(root):
             isMirror(t1.left, t2.right) and
             isMirror(t1.right, t2.left)
         )
-
     return isMirror(root, root)
