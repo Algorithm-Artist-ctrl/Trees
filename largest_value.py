@@ -24,7 +24,6 @@ class Solution:
 
             result.append(level_max)
             queue = next_level  
-
         return result
 root = TreeNode(1)
 root.left = TreeNode(3)
