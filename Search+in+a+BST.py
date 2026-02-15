@@ -3,7 +3,6 @@ root1, root2, root3 = create_predefined_bsts_manual()
 def search_in_BST(root, value):
     if root is None:
         return False
-
     if root.data == value:
         return True
     if value < root.data:
