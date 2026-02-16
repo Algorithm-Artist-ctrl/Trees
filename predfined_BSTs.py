@@ -3,8 +3,6 @@ class BSTNode:
         self.data = data
         self.left = None
         self.right = None
-
-
 def print_bst(root):
     """In-order traversal"""
     if root is None:
@@ -12,10 +10,7 @@ def print_bst(root):
     print_bst(root.left)
     print(root.data, end=" ")
     print_bst(root.right)
-
-
 def create_predefined_bsts_manual():
-    # BST 1
     root1 = BSTNode(10)
     root1.left = BSTNode(5)
     root1.right = BSTNode(15)
