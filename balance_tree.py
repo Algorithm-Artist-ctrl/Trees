@@ -30,11 +30,9 @@ if __name__ == "__main__":
     root1.right = TreeNode(3)
     root1.left.left = TreeNode(4)
     root1.left.right = TreeNode(5)
-
     root2 = TreeNode(1)
     root2.right = TreeNode(2)
     root2.right.right = TreeNode(3)
-
     sol = Solution()
     print(sol.isBalanced(root1)) 
     print(sol.isBalanced(root2))  #
