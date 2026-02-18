@@ -5,6 +5,5 @@ def generate(numRows):
         for j in range(1, i):
             row[j] = res[i - 1][j - 1] + res[i - 1][j]
         res.append(row)
-    
     return res
 print(generate(5))
